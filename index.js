@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-const token = "token";
 const prefix = ";";
 
 client.on("ready", () => {
@@ -90,4 +89,4 @@ client.on("message", async message => {
   }
 });
 
-client.login(token);
+client.login(process.env.token);
